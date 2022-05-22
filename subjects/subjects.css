@@ -26,6 +26,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #DF2771; 
 }
+ul li i{
+	font-size:xx-large;
+}
 
 /*NAVIGATION BAR*/
 .nav
@@ -76,7 +79,7 @@ body {
 
 .nav ul li a:hover
 {
-	color: #FA4B37;
+	color: #2292A4;
 }
 
 .nav button
