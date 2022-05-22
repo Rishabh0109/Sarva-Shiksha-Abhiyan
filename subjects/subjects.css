@@ -339,13 +339,13 @@ ul li i{
 	display: flex;
 }
 .click-me a {
-	color: #DF2771;
+	color: #2292A4;
 	text-decoration: none;
 	transition-duration: .5s;
 	padding: 10px;
 }
 .click-me a:hover {
-	background: #DF2771;
+	background: #2292A4;
 	color: #fff;
 }
 
