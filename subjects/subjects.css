@@ -33,8 +33,19 @@ ul li i{
 /*NAVIGATION BAR*/
 .nav
 {
-	width: 100%;
-	background-color: #fff;
+	padding-top: 20px;
+		padding-bottom: 20px;
+		top: 0;
+		position: fixed;
+		display: flex;
+		width: 100%;
+		z-index: 1000;
+		background: #F7FFE0;
+		justify-content: space-around;
+		transition: 1.5s;
+		align-items: center;
+	/* width: 100%;
+	background-color: #F7FFE0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -43,7 +54,7 @@ ul li i{
 	position: fixed;
 	top: 0px;
 	z-index: 10;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
 }
 
 .nav li, a, button
