@@ -159,9 +159,7 @@ a, button {
 	filter: drop-shadow(0 20px 10px rgba(0,0,0,0.2));
 }
 
-.svg-vid{
-	width: 100px;
-}
+
 
 /* SIDE MENU */
 .menu {
@@ -481,12 +479,20 @@ a, button {
 	margin-left: 90px;
 	align-self: center;
 }
-.btn-roshan:hover {
+.btn-bhati:hover {
 	background: rgba(0,255,0,0.7);
 	color: #fff;
 }
-.btn-roshan2:hover {
+.btn-rishabh:hover {
 	background: rgba(0,0,255,0.5);
+	color: #fff;
+}
+.btn-dubey:hover {
+	background: rgba(255, 0, 0, 0.5);
+	color: #fff;
+}
+.btn-mahto:hover {
+	background: rgba(255, 255, 0, 0.5);
 	color: #fff;
 }
 .card-title {
@@ -825,7 +831,8 @@ footer .right-col h1{
 footer .border{
 	width: 100px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right,#56CADC,
+		#186A77);
 	margin: 2px;
 }
 footer .newsletter-form {
