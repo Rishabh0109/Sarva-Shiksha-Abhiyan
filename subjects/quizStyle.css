@@ -16,6 +16,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 /*Styling SCROLLBAR*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -42,6 +43,7 @@ body {
 	top: 0px;
 	z-index: 10;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	background: #F7FFE0;
 }
 
 .nav li, a, button
@@ -49,19 +51,19 @@ body {
 	float: left;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 13px;
-	color: #2E3D49;
+	font-size: 17px;
+	color: #2292A4;
 	display: block;
 	text-decoration: none;
 	text-align: center;
 }
 
-.nav ul li img {
+/* .nav ul li img {
 	width: 20px;
 	margin-right: 10px;
 	transform: translateY(5px);
 	padding-top: 5px;
-}
+} */
 
 .nav ul li 
 {
@@ -77,7 +79,12 @@ body {
 
 .nav ul li a:hover
 {
-	color: #FA4B37;
+	background-color: #2292A4;
+	border: 1px #204346;
+	border-radius: 7px;
+	color: white;
+	padding: 5px;
+	
 }
 
 .nav button

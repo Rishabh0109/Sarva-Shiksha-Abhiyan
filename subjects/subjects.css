@@ -20,11 +20,11 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FA4B37;
+  background: #204346;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #DF2771; 
+  background: #2292A4; 
 }
 ul li i{
 	font-size:xx-large;
@@ -62,8 +62,8 @@ ul li i{
 	float: left;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	font-size: 13px;
-	color: #2E3D49;
+	font-size: 17px;
+	color: #2292A4;
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -90,7 +90,11 @@ ul li i{
 
 .nav ul li a:hover
 {
-	color: #2292A4;
+	background-color: #2292A4;
+	border: 1px #204346;
+	border-radius: 7px;
+	color: white;
+	padding: 5px;
 }
 
 .nav button
