@@ -15,7 +15,9 @@ body {
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 }
-
+h3{
+	color: #186A77;
+}
 
 /*Styling SCROLLBAR*/
 ::-webkit-scrollbar {
@@ -90,7 +92,8 @@ body {
 .nav button
 {
 	padding: 9px 25px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #56CADC,
+		#186A77);
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -210,7 +213,7 @@ body {
 .left-side li {
 	list-style-type: none;
 	cursor: pointer;
-	color: #FA4B37;
+	color:#56CADC;
 	font-weight: 700;
 	font-size: 1.2em;
 	margin-bottom: 20px;
