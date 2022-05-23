@@ -72,7 +72,7 @@ nav ul li a:hover {
 ::-webkit-scrollbar-thumb:hover {
 	background: #2292A4;
 }
-.active {
+nav.someclass ul li a.active {
 	color: #fff;
 	border-radius: 5px;
 	background: #2292A4;
@@ -132,7 +132,7 @@ a, button {
 	text-align: center;
 }
 .head-container {
-	margin-top: 245px;
+	margin-top: 105px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;

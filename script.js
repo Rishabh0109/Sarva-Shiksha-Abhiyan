@@ -194,3 +194,11 @@ let d=document.getElementById('contact');
 //     this.className += " active";
 //   });
 // }
+navbar1=document.querySelector(".someclass").querySelectorAll("a");  
+navbar1.forEach(element => {
+  element.addEventListener("click",function()
+  {
+    navbar1.forEach(nav=>nav.classList.remove("active"))
+    this.classList.add("active")
+  })
+});
