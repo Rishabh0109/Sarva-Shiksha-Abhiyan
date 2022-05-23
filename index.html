@@ -8,8 +8,8 @@
 	<meta name="desciption" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+	
 	<script>
 		$(window).on('scroll', function(){
   			if($(window).scrollTop()){
@@ -43,12 +43,13 @@
 				लोचनाभ्याम विहीनस्य, दर्पण:किं करिष्यति।।</p>
 				<h5>अर्थात:- जिस मनुष्य के पास स्वयं का(प्रज्ञा) विवेक नहीं है, उसके शास्त्र किस काम के, जैसे नेत्रविहीन व्यक्ति के लिए
 				दर्पण व्यर्थ है।</h5>
+				<br>
 				<div class="play">
-					<span><a href="https://www.youtube.com/watch?v=KFyrgDO1WXk" target="_blank">Watch Now </a></span><img src="images/icon/play.png" alt="play">
+					<span><button id="playvideo" >Watch Now </button></span><img src="images/icon/play.png" alt="play">
 				</div>
 			</div>
 			<div class="svg-image">
-				<iframe width="600" height="450" src="https://www.youtube.com/embed/hH2eydCRb9M" title="YouTube video player"
+				<iframe id="video1" width="600" height="450" src="https://www.youtube.com/embed/hH2eydCRb9M" title="YouTube video player"
 					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
 				<!-- <img src="images/extra/svg1.jpg" alt="svg"> -->
@@ -376,5 +377,6 @@
 	</footer>
 	
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </body>
 </html>

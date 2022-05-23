@@ -202,3 +202,12 @@ navbar1.forEach(element => {
     this.classList.add("active")
   })
 });
+const PlayBtn=document.getElementById("playvideo")
+const Player=document.getElementById("video1")
+let times = 0, playY;
+const playvideo1=PlayBtn.addEventListener( 'click' , () => {
+  if(times == 0){
+    playY = Player.src += '?autoplay=1';
+    times = 1;
+  }
+});
