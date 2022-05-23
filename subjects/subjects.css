@@ -349,6 +349,17 @@ ul li i{
 	color: #fff;
 }
 
+
+#makeitfull {
+	display: flex;
+	justify-content: center;
+	transform: translateY(35px);
+}
+
+#makeitfull img {
+	width: 50px;
+}
+
 /*PROJECTS*/
 .project-panel {
 	/*background: #000;*/
