@@ -35,7 +35,7 @@ ul li i{
 {
 	padding-top: 20px;
 		padding-bottom: 20px;
-		top: 0;
+		top: 0px;
 		position: fixed;
 		display: flex;
 		width: 100%;
@@ -86,6 +86,7 @@ ul li i{
 .nav ul li a
 {
 	/* transition: all 0.3s ease 0s; */
+	padding: 5px;
 }
 
 .nav ul li a:hover
@@ -94,7 +95,22 @@ ul li i{
 	border: 1px #204346;
 	border-radius: 7px;
 	color: white;
-	padding: 5px;
+	
+}
+/* .nav ul li a.active
+{
+	background-color: #2292A4;
+	border: 1px #204346;
+	border-radius: 7px;
+	color: white;
+	
+} */
+.active{
+	background-color: #2292A4;
+	border: 1px #204346;
+	border-radius: 7px;
+	color: white;
+	
 }
 
 .nav button

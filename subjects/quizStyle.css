@@ -24,28 +24,27 @@ h3{
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FA4B37;
+  background: #204346;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #DF2771; 
+  background: #2292A4; 
 }
 
 /*NAVIGATION BAR*/
 .nav
 {
-	width: 100%;
-	background-color: #fff;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 2%;
-	position: fixed;
-	top: 0px;
-	z-index: 10;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-	background: #F7FFE0;
+	padding-top: 20px;
+		padding-bottom: 20px;
+		top: 0px;
+		position: fixed;
+		display: flex;
+		width: 100%;
+		z-index: 1000;
+		background: #F7FFE0;
+		justify-content: space-around;
+		transition: 1.5s;
+		align-items: center;
 }
 
 .nav li, a, button
@@ -60,23 +59,31 @@ h3{
 	text-align: center;
 }
 
-/* .nav ul li img {
+.nav ul li img {
 	width: 20px;
 	margin-right: 10px;
 	transform: translateY(5px);
 	padding-top: 5px;
-} */
+}
 
 .nav ul li 
 {
 	list-style: none;
 	display: inline-block;
 	padding: 0px 20px;
+	
+	
 }
+/* .nav ul{
+	display: flex;
+	align-items: center;
+	margin-right: 40px;
+} */
 
 .nav ul li a
 {
-	transition: all 0.3s ease 0s;
+	/* transition: all 0.3s ease 0s; */
+	padding: 5px;
 }
 
 .nav ul li a:hover
@@ -85,7 +92,7 @@ h3{
 	border: 1px #204346;
 	border-radius: 7px;
 	color: white;
-	padding: 5px;
+	
 	
 }
 
