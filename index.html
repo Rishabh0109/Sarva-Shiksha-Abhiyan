@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="shortcut icon" type="png" href="images/icon/favicon.jpg">
 	<meta charset="utf-8">
@@ -8,49 +9,148 @@
 	<meta name="desciption" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<!-- <script type="text/javascript" src="script.js"></script> -->
-	
+
 	<script>
-		$(window).on('scroll', function(){
-  			if($(window).scrollTop()){
-  			  $('nav').addClass('black');
- 			 }else {
- 		   $('nav').removeClass('black');
- 		 }
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
 		})
 	</script>
 </head>
+
 <body>
-<!-- Navigation Bar -->
+	<!-- Navigation Bar -->
 	<header id="header">
 		<nav class="someclass">
 			<div class="logo "><img src="images/icon/logo.png" alt="logo"></div>
-			<ul >
-				<li><a class="active" href="" >Home</a></li>
-				<!-- <li><a href="#portfolio_section">Portfolio</a></li> -->
-				
-				<li><a  href="#services_section">Resources</a></li>
-				<li><a   href="#team_section">Team</a></li>
-				<li><a   href="#review_section">Reviews</a></li>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li class="dropdown"> <a href="#">Resources </a><i class="fa fa-caret-down"></i>
+						<ul  class="dropdown-content">
+							<li class="sub" onclick="display(1)"><a href="#">10th standard<i class="fa fa-caret-right"></i></a>
+								<ul id="10" class="sublist">
+									<li><a href="#" onclick="display(1.1)">Science<i class="fa fa-caret-right"></i></a>
+										<ul id="101" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#" onclick="display(1.2)">Maths<i class="fa fa-caret-right"></i></a>
+										<ul id="102" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#"  onclick="display(1.3)">English<i class="fa fa-caret-right"></i></a>
+										<ul id="103" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+								</ul>
+								
+							</li>
+							<li   class="sub" onclick="display(2)"><a href="#">12th standard<i class="fa fa-caret-right"></i></a>
+								<ul id="12" class="sublist">
+									<li><a href="#" onclick="display(1.4)">Physics<i class="fa fa-caret-right"></i></a>
+										<ul id="121" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#" onclick="display(1.5)">Chemistry<i class="fa fa-caret-right"></i></a>
+										<ul id="122" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#"  onclick="display(1.6)">Maths<i class="fa fa-caret-right"></i></a>
+										<ul id="123" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+									<li><a href="#"  onclick="display(1.7)">Biology<i class="fa fa-caret-right"></i></a>
+										<ul id="124" class="supersublist">
+											<li><a href="">Chapter 1</a></li>
+											<li><a href="">Chapter 2</a></li>
+											<li><a href="">Chapter 3</a></li>
+											<li><a href="">Chapter 4</a></li>
+											<li><a href="">Chapter 5</a></li>
+											<li><a href="">Chapter 6</a></li>
+											<li><a href="">Chapter 7</a></li>
+											<li><a href="">Chapter 8</a></li>
+										</ul>
+									</li>
+								</ul>
+							 </li>
+						</ul>
+				</li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#review_section">Reviews</a></li>
 			</ul>
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+					src="images/icon/search.png" alt="search" onclick=slide()></div>
 			<a class="get-started" href="login.html">Get Started</a>
 			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
 		</nav>
 		<div class="head-container">
 			<div class="quote">
 				<p>यस्य नास्ति स्वयं प्रज्ञा, शास्त्रं तस्य करोति किं।
-				लोचनाभ्याम विहीनस्य, दर्पण:किं करिष्यति।।</p>
-				<h5>अर्थात:- जिस मनुष्य के पास स्वयं का(प्रज्ञा) विवेक नहीं है, उसके शास्त्र किस काम के, जैसे नेत्रविहीन व्यक्ति के लिए
-				दर्पण व्यर्थ है।</h5>
+					लोचनाभ्याम विहीनस्य, दर्पण:किं करिष्यति।।</p>
+				<h5>अर्थात:- जिस मनुष्य के पास स्वयं का(प्रज्ञा) विवेक नहीं है, उसके शास्त्र किस काम के, जैसे नेत्रविहीन
+					व्यक्ति के लिए
+					दर्पण व्यर्थ है।</h5>
 				<br>
 				<div class="play">
-					<span><button id="playvideo" >Watch Now </button></span><img src="images/icon/play.png" alt="play">
+					<span><button id="playvideo">Watch Now </button></span><img src="images/icon/play.png" alt="play">
 				</div>
 			</div>
 			<div class="svg-image">
-				<iframe id="video1" width="600" height="450" src="https://www.youtube.com/embed/hH2eydCRb9M" title="YouTube video player"
-					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				<iframe id="video1" width="600" height="450" src="https://www.youtube.com/embed/hH2eydCRb9M"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
 				<!-- <img src="images/extra/svg1.jpg" alt="svg"> -->
 			</div>
@@ -59,7 +159,7 @@
 			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
 			<div class="user">
 				<img src="images/creator/roshan.jpeg" alt="Username">
-				<p>roshank9419</p>
+				<p>uiet1234</p>
 			</div>
 			<ul>
 				<li><a href="#about_section">About</a></li>
@@ -84,13 +184,13 @@
 			<div class="side-text">
 				<h2>What you think about us ?</h2>
 				<p>In the challenging times of Covid-19 many schools were shut down to contain
-				the virus but that led to loss of study for the students belonging to weaker sections of society
-				because online lectures were not much efficient. Also many fraudulent companies scammed
-				such families in name of providing study material at an unbearable price which is available for
-				free over the internet. Since many children fall in their trap because they are not aware that it
-				is available absolutely free on the Internet, our main aim is to create a website to meet all the
-				educational needs of such children varying from topic wise lectures, practice problems to
-				medium through which they can raise their queries/doubts on one single platform</p>
+					the virus but that led to loss of study for the students belonging to weaker sections of society
+					because online lectures were not much efficient. Also many fraudulent companies scammed
+					such families in name of providing study material at an unbearable price which is available for
+					free over the internet. Since many children fall in their trap because they are not aware that it
+					is available absolutely free on the Internet, our main aim is to create a website to meet all the
+					educational needs of such children varying from topic wise lectures, practice problems to
+					medium through which they can raise their queries/doubts on one single platform</p>
 			</div>
 		</div>
 	</div>
@@ -124,7 +224,7 @@
 				<p>Quizzes</p>
 			</div>
 		</a>
-		
+
 		<!-- <a href="#">
 			<div class="s-card"><img src="images/icon/p3.png">
 				<p>Performance and Ranking Report</p>
@@ -149,7 +249,7 @@
 
 
 
-<!-- Some Popular Subjects
+	<!-- Some Popular Subjects
 	<div class="title">
 		<span>Popular Subjects on LearnEd</span>
 	</div>
@@ -164,10 +264,10 @@
 		
 	</div> -->
 
-	
 
 
-<!-- PORTFOLIO -->
+
+	<!-- PORTFOLIO -->
 	<!-- <div class="diffSection" id="portfolio_section">
 		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
 		<div class="content">
@@ -185,30 +285,36 @@
 		<span><center><div class="data">27</div><div class="det">Total Projects</div></center></span>
 		</div>
 	</div> -->
- 
 
-<!-- TEAM -->
+
+	<!-- TEAM -->
 	<div class="diffSection" id="team_section">
-		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+		<center>
+			<p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p>
+		</center>
 		<div class="totalcard">
 			<div class="card">
 				<center><img src="images/creator/rishabh.jpg"></center>
-				<center><div class="card-title">Yogesh Bhati</div>
-				<div id="detail">
-					<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
-					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-bhati">Follow +</button></a>
-				</div>
+				<center>
+					<div class="card-title">Yogesh Bhati</div>
+					<div id="detail">
+						<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating
+							curiosity, he will continue the learning process as long as he lives “</p>
+						<div class="duty"></div>
+						<a href="#" target="_blank"><button class="btn-bhati">Follow +</button></a>
+					</div>
 				</center>
 			</div>
 			<div class="card">
 				<center><img src="images/creator/rishabh.jpg"></center>
-				<center><div class="card-title">Rishabh Sharma</div>
-				<div id="detail">
-					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
-					<div class="duty"></div>
-					<a href="#" target="_blank"><button class="btn-rishabh">Follow +</button></a>
-				</div>
+				<center>
+					<div class="card-title">Rishabh Sharma</div>
+					<div id="detail">
+						<p>“ Real education should consist of drawing the goodness and the best out of our own students.
+							What better books can there be than the book of humanity “</p>
+						<div class="duty"></div>
+						<a href="#" target="_blank"><button class="btn-rishabh">Follow +</button></a>
+					</div>
 				</center>
 			</div>
 			<div class="card">
@@ -216,11 +322,11 @@
 				<center>
 					<div class="card-title">Vaibhav Dubey</div>
 					<div id="detail">
-						<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better
+						<p>“ Real education should consist of drawing the goodness and the best out of our own students.
+							What better
 							books can there be than the book of humanity “</p>
 						<div class="duty"></div>
-						<a href="#" target="_blank"><button
-								class="btn-dubey">Follow +</button></a>
+						<a href="#" target="_blank"><button class="btn-dubey">Follow +</button></a>
 					</div>
 				</center>
 			</div>
@@ -229,11 +335,11 @@
 				<center>
 					<div class="card-title">Rohit Mahto</div>
 					<div id="detail">
-						<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better
+						<p>“ Real education should consist of drawing the goodness and the best out of our own students.
+							What better
 							books can there be than the book of humanity “</p>
 						<div class="duty"></div>
-						<a href="#" target="_blank"><button
-								class="btn-mahto">Follow +</button></a>
+						<a href="#" target="_blank"><button class="btn-mahto">Follow +</button></a>
 					</div>
 				</center>
 			</div>
@@ -242,59 +348,76 @@
 
 
 
-<!-- Reviews by Students -->
+	<!-- Reviews by Students -->
 
-<div class="review">
-	<div class="diffSection" id="review_section">
-		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
-	</div>
-	<div class="rev-container">
-		<div class="rev-card">
-			<div class="identity">
-				<img src="images/creator/stud1.jpg"><p>Robin Singh Negi</p>
-				<h6>12th Standard</h6>
-				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
-			</div>
-			<div class="rev-cont">
-				<p id="title">Review:</p>
-				<p id="content">
-					मैंने अरुण सर के साथ जावा फंडामेनेटल कोर्स किया। यह एक महान अनुभव था। मस्तिष्क टीज़र और असाइनमेंट, वास्तव में पूरी
-					सामग्री वास्तव में अच्छी थी। कुछ समस्याएं चुनौतीपूर्ण थीं लेकिन दिलचस्प थीं। जहाँ भी मैं अटका था बहुत अच्छी तरह से
-					समझाया गया था ...
-				</p>
-			</div>
+	<div class="review">
+		<div class="diffSection" id="review_section">
+			<center>
+				<p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say
+					About Us?</p>
+			</center>
 		</div>
-		<div class="rev-card">
-			<div class="identity">
-				<img src="images/creator/stud2.jpeg"><p>Riya Tewatia</p>
-				<h6>10th Standard</h6>
-				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+		<div class="rev-container">
+			<div class="rev-card">
+				<div class="identity">
+					<img src="images/creator/stud1.jpg">
+					<p>Robin Singh Negi</p>
+					<h6>12th Standard</h6>
+					<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+							src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png">
+					</div>
+				</div>
+				<div class="rev-cont">
+					<p id="title">Review:</p>
+					<p id="content">
+						मैंने अरुण सर के साथ जावा फंडामेनेटल कोर्स किया। यह एक महान अनुभव था। मस्तिष्क टीज़र और
+						असाइनमेंट, वास्तव में पूरी
+						सामग्री वास्तव में अच्छी थी। कुछ समस्याएं चुनौतीपूर्ण थीं लेकिन दिलचस्प थीं। जहाँ भी मैं अटका था
+						बहुत अच्छी तरह से
+						समझाया गया था ...
+					</p>
+				</div>
 			</div>
-			<div class="rev-cont">
-				<p id="title">Review:</p>
-				<p id="content">
-					When I was watching "Dear Zindagi", I could relate Sharukh Khan to Arnav Bhaiya. The way Sharukh Khan was giving life lessons to Alia Bhatt, in the same way Arnav Bhaiya will give coding life lessons which will guide you throughout your code life...
-				</p>
+			<div class="rev-card">
+				<div class="identity">
+					<img src="images/creator/stud2.jpeg">
+					<p>Riya Tewatia</p>
+					<h6>10th Standard</h6>
+					<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+							src="images/icon/star.png"><img src="images/icon/star.png"></div>
+				</div>
+				<div class="rev-cont">
+					<p id="title">Review:</p>
+					<p id="content">
+						When I was watching "Dear Zindagi", I could relate Sharukh Khan to Arnav Bhaiya. The way Sharukh
+						Khan was giving life lessons to Alia Bhatt, in the same way Arnav Bhaiya will give coding life
+						lessons which will guide you throughout your code life...
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="rev-card">
-			<div class="identity">
-				<img src="images/creator/stud3.jpg"><p>Roopi Gill</p>
-				<h6>12th Standard</h6>
-				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			<div class="rev-card">
+				<div class="identity">
+					<img src="images/creator/stud3.jpg">
+					<p>Roopi Gill</p>
+					<h6>12th Standard</h6>
+					<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img
+							src="images/icon/star.png"><img src="images/icon/star.png"></div>
+				</div>
+				<div class="rev-cont">
+					<p id="title">Review:</p>
+					<p id="content">
+						SSM was an amazing experience for me. I belong to electronics department and had a little
+						experience in coding but I think it has helped me think things through in a much more analytical
+						manner. Coding is important no matter which branch you are in. It gives you a better
+						understanding about how to approach a problem...
+					</p>
+				</div>
 			</div>
-			<div class="rev-cont">
-				<p id="title">Review:</p>
-				<p id="content">
-					SSM was an amazing experience for me. I belong to electronics department and had a little experience in coding but I think it has helped me think things through in a much more analytical manner. Coding is important no matter which branch you are in. It gives you a better understanding about how to approach a problem...
-				</p>
-			</div>
-		</div>
-		
-	</div>
-</div>
 
-<!-- CONTACT US -->
+		</div>
+	</div>
+
+	<!-- CONTACT US -->
 	<!-- <div class="diffSection" id="contactus_section">
 		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
 		<div class="csec"></div>
@@ -318,7 +441,7 @@
 	</div> -->
 
 
-<!-- FEEDBACK -->
+	<!-- FEEDBACK -->
 	<div class="title2" id="feedBACK">
 		<span>Give Feedback</span>
 		<div class="shortdesc2">
@@ -341,14 +464,19 @@
 		</div>
 	</div>
 
-<!-- Sliding Information -->
-	<marquee style="background: linear-gradient(to right, #56CADC, #186A77); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10"><div class="marqu">“This is a non profit initiative started by students of UIET Kurukshetra University to serve the educational need of weaker sections of the society in the difficult times of Covid 19. Also promotion of this site will prevent poor families from being scammed in the name of Education.”</div></marquee>
+	<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #56CADC, #186A77); margin-top: 50px;" direction="left"
+		onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10">
+		<div class="marqu">“This is a non profit initiative started by students of UIET Kurukshetra University to serve
+			the educational need of weaker sections of the society in the difficult times of Covid 19. Also promotion of
+			this site will prevent poor families from being scammed in the name of Education.”</div>
+	</marquee>
 
-<div id="makeitfull">
-	<a href="" onbefore><img src="images/icon/arrow-up.png"></a>
-</div>
+	<div id="makeitfull">
+		<a href="" onbefore><img src="images/icon/arrow-up.png"></a>
+	</div>
 
-<!-- FOOTER -->
+	<!-- FOOTER -->
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
@@ -362,8 +490,11 @@
 					<a href="#"><img src="images/icon\linkedin.png"></a>
 				</div><br><br>
 				<p class="rights-text">Copyright © 2022 Created By Rishabh,Yogesh,Vaibhav and Rohit as a solution.</p>
-				<br><p><img src="images/icon/location.png">University Institute Of Engineer And Technology<br>Kurukshetra, Haryana</p><br>
-				<p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp; random1234@gmail.com</p>
+				<br>
+				<p><img src="images/icon/location.png">University Institute Of Engineer And Technology<br>Kurukshetra,
+					Haryana</p><br>
+				<p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp;
+					random1234@gmail.com</p>
 			</div>
 			<div class="right-col">
 				<h1 style="color: #fff">Our Newsletter</h1>
@@ -376,8 +507,9 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </body>
+
 </html>

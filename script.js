@@ -211,3 +211,73 @@ const playvideo1=PlayBtn.addEventListener( 'click' , () => {
     times = 1;
   }
 });
+let tenthId=document.getElementById('10')
+let twelfthId=document.getElementById('12')
+let scienceId=document.getElementById('101')
+let MathsId=document.getElementById('102')
+let EnglishId=document.getElementById('103')
+let PhysicsId=document.getElementById('121')
+let ChemistryId=document.getElementById('122')
+let Maths12Id=document.getElementById('123')
+let BiologyId=document.getElementById('124')
+
+function display(a)
+{
+  if(a===1)
+  {
+    tenthId.style.display='block'
+    twelfthId.style.display='none'
+  }
+  else if(a===1.1)
+  {
+    scienceId.style.display='block'
+    MathsId.style.display='none'
+    EnglishId.style.display='none'
+    
+  }
+  else if(a===1.2)
+  {
+    MathsId.style.display='block'
+    scienceId.style.display='none'
+    EnglishId.style.display='none'
+  }
+  else if(a===1.3)
+  {
+    EnglishId.style.display='block'
+    scienceId.style.display='none'
+    MathsId.style.display='none'
+  }
+  else if(a===2){
+    twelfthId.style.display='block'
+    tenthId.style.display='none'
+  }
+  else if(a===1.4)
+  {
+    PhysicsId.style.display='block'
+    ChemistryId.style.display='none'
+    Maths12Id.style.display='none'
+    BiologyId.style.display='none'
+  }
+  else if(a===1.5)
+  {
+    PhysicsId.style.display='none'
+    ChemistryId.style.display='block'
+    Maths12Id.style.display='none'
+    BiologyId.style.display='none'
+  }
+  else if(a===1.6)
+  {
+    PhysicsId.style.display='none'
+    ChemistryId.style.display='none'
+    Maths12Id.style.display='block'
+    BiologyId.style.display='none'
+  }
+  else if(a===1.7)
+  {
+    PhysicsId.style.display='none'
+    ChemistryId.style.display='none'
+    Maths12Id.style.display='none'
+    BiologyId.style.display='block'
+  }
+  
+}
