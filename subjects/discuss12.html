@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <link rel="stylesheet" href="discuss12.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Discussion Portal</h1>
+        <div class="content">
+            <div class="left">
+                <div class="leftUpper">
+                    <input type="button" value="New Question form" id="newQues">
+                    <input type="search" id="searchQues" placeholder="search questions...">
+                </div>
+                <div id="leftLower">
+                    <ul id="addedQues"></ul>
+                </div>
+            </div>
+            <div id="right">
+                <div id="firstRight">
+                    <h2 id="subHeading">Welcome to Discussion Portal !</h2> 
+                    <p id="para">Enter a subject and question to get started</p>
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="question" placeholder="Question"></textarea>
+                    <input type="button" value="Submit" id="submit" style="margin-right: 2.3vw;" >
+                </div>
+               
+               <div id="upperDiv" style="display: none;">
+                    <h3 style="font-size:1.2vw; color:grey; margin: 1.5vw 0vw 0.2vw 0vw;">Question</h3>
+                    <div id="questionDisplayed"></div>
+                    <div id="resolveBtnDiv" style="display: flex; justify-content: end;"></div>
+                </div>
+
+               <div id="middleDiv" style="display: none;">
+                    <h4 style = "font-size:1vw; color:grey">Responses</h4>
+                    <div id="resDiv" style="display: none;"></div>
+                </div>
+
+               <div id="lowerDiv" style="display: none; height: 17vw; margin-top: 1vw;">
+                    <h3 style = "font-size:1.3vw; color:grey; margin-bottom: 0.4vw;">Add Response</h3>
+                    <input type="text" placeholder="Enter Name" id="inputName">
+                    <textarea id="commentArea" placeholder="Enter Comment"></textarea>
+                    <div id="commBtnDiv" style="display: flex; justify-content: end;"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+    <script src="discuss12.js"></script>
+</body>
+</html>
