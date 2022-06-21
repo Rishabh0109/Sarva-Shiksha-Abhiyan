@@ -97,9 +97,7 @@ nav ul li a:hover {
 	right: 0;
 	transform: translate(100%,0);
 }
-/* .sub supersublist{
-	position: relative;
-} */
+
 .sub .sublist{
 	position: absolute;
 	display: none;
@@ -108,9 +106,7 @@ nav ul li a:hover {
 	position: absolute;
 	display: none;
 }
-/* .dropdown-content:hover .sublist{
-	display: block;
-} */
+
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -221,19 +217,11 @@ a, button {
 	cursor: pointer;
 	filter: drop-shadow(0 0 10px #0002);
 }
-/* .quote .play span a{
-	margin-left: 10px;
-	font-size: 20px;
-	font-weight: 900;
-	color: rgba(0, 0, 0, 0.8);
-	cursor: pointer;
-} */
+
 .svg-image img{
 	width: 500px;
 	filter: drop-shadow(0 20px 10px rgba(0,0,0,0.2));
 }
-
-
 
 /* SIDE MENU */
 .menu {
@@ -256,16 +244,12 @@ a, button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* background: #FA4B37; */
 }
 .side-menu ul li {
 	list-style: none;
-	/* background: #009900; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* border-bottom: 1px solid #fff; */
-	/* padding: 10px 0px; */
 }
 .side-menu ul li:hover a{
 	background: #fff;
@@ -275,7 +259,6 @@ a, button {
 	color: #FFF;
 	width: 100%;
 	font-size: 1em;
-	/* background: #2E3D49; */
 	text-decoration: none;
 	padding: 15px 0px;
 }
@@ -306,7 +289,6 @@ a, button {
 .user img, .user p {
 	opacity: 1;
 }
-/*Common things in all sections*/
 #about_section, #portfolio_section, #team_section, #services_section, #contactus_section {
 	font-family: 'Open Sans', sans-serif;
 	color: #2E3D49;
@@ -314,7 +296,6 @@ a, button {
 }
 .diffSection {
 	width: 100%;
-	/*position: relative;*/
 	justify-content: center;
 	align-items: center;
 }
@@ -576,8 +557,6 @@ a, button {
 	font-weight: 700;
 }
 
-/*Service Section*/
-/*Service Section*/
 .service-swipe {
 	display: flex;
 	flex-wrap: wrap;
